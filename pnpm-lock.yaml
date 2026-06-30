@@ -17,6 +17,9 @@ importers:
       '@changesets/cli':
         specifier: ^2.31.0
         version: 2.31.0(@types/node@25.6.0)
+      '@tailwindcss/oxide-linux-x64-gnu':
+        specifier: 4.2.2
+        version: 4.2.2
       turbo:
         specifier: ^2.9.18
         version: 2.9.18
@@ -8043,8 +8046,7 @@ snapshots:
   '@tailwindcss/oxide-linux-arm64-musl@4.2.4':
     optional: true
 
-  '@tailwindcss/oxide-linux-x64-gnu@4.2.2':
-    optional: true
+  '@tailwindcss/oxide-linux-x64-gnu@4.2.2': {}
 
   '@tailwindcss/oxide-linux-x64-gnu@4.2.4':
     optional: true
