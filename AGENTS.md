@@ -30,6 +30,11 @@ pnpm test         # vitest
 
 Filter to one package: `pnpm core <script>` / `pnpm cli <script>`.
 
+## Zeabur Deployment
+
+- Project ID: `6a425d2522d1fdaf7eb0da9b`
+- Service ID: `6a425d3622d1fdaf7eb0da9d`
+
 ## Hard rules
 
 - **Biome must pass before commit.** Run `pnpm check` (or `pnpm check:fix`). CI and the user's review both expect a clean tree.
@@ -45,3 +50,12 @@ Filter to one package: `pnpm core <script>` / `pnpm cli <script>`.
 ## Releasing (reference)
 
 `pnpm release` builds `core` + `cli` and runs `changeset publish`. Triggered by the maintainer, not by agents.
+
+
+<claude-mem-context>
+# Memory Context
+
+# [open-slide] recent context, 2026-06-29 7:32pm GMT+8
+
+No previous sessions found.
+</claude-mem-context>

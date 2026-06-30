@@ -126,7 +126,13 @@ export function ThumbnailRail({
                     )}
                     style={{ width, height: HORIZONTAL_THUMB_HEIGHT }}
                   >
-                    <SlideCanvas scale={scale} center={false} flat freezeMotion design={design}>
+                    <SlideCanvas
+                      scale={scale}
+                      center={false}
+                      flat
+                      freezeMotion={!active}
+                      design={design}
+                    >
                       <SlidePageProvider index={i} total={pages.length}>
                         <PageComp />
                       </SlidePageProvider>
@@ -346,7 +352,7 @@ function ThumbContents({
         )}
         style={{ width: thumbWidth, height }}
       >
-        <SlideCanvas scale={scale} center={false} flat freezeMotion design={design}>
+        <SlideCanvas scale={scale} center={false} flat freezeMotion={!active} design={design}>
           <SlidePageProvider index={index} total={total}>
             <PageComp />
           </SlidePageProvider>
