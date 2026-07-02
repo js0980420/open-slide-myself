@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "open-slide dev",
-    "build": "open-slide build",
+    "build": "pnpm --filter @open-slide/core build && open-slide build",
     "preview": "open-slide preview"
   },
   "dependencies": {
