@@ -28,7 +28,7 @@ import talkTaia from './assets/talk-taia.png';
 import workshopPoster from './assets/workshop-poster.png';
 
 export const meta: SlideMeta = {
-  title: '2026/6/30 雲林公益講座',
+  title: '2026/07/03 台中公益講座',
   createdAt: '2026-06-27T10:06:36.946Z',
 };
 
@@ -391,7 +391,7 @@ const Cover: Page = () => (
       }}
     >
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-        <Label>Yunlin Charity Lecture</Label>
+        <Label>Taichung Charity Lecture</Label>
         <div
           style={{
             fontSize: 26,
@@ -402,7 +402,7 @@ const Cover: Page = () => (
             background: palette.surface,
           }}
         >
-          2026.06.30
+          2026.07.03
         </div>
       </div>
 
@@ -2580,7 +2580,7 @@ const TemplateLayers: Page = () => (
           alignItems: 'stretch',
         }}
       >
-        <TemplatePreviewCard title="AI 公益講座" kicker="YUNLIN × AI" color="#f1d39a" />
+        <TemplatePreviewCard title="AI 公益講座" kicker="TAICHUNG × AI" color="#f1d39a" />
         <div
           style={{
             display: 'grid',
@@ -3743,7 +3743,7 @@ Sequence 時間段、字幕軌與音軌安排」。`}
   </div>
 );
 
-const ReelsPhoneMock = ({
+const _ReelsPhoneMock = ({
   title = 'Air Max 2026',
   label = '1080 × 1920',
 }: {
@@ -4271,8 +4271,8 @@ const RemotionCompositionSetup: Page = () => (
           }}
         >
           {`<Composition
-  id="yunlin-reel"
-  component={YunlinVideo}
+  id="taichung-reel"
+  component={TaichungVideo}
   width={1080}
   height={1920}
   fps={30}
@@ -4328,7 +4328,7 @@ const RemotionCompositionSetup: Page = () => (
           >
             {`請先幫我建立一個 Remotion Composition：
 尺寸 1080×1920、fps 30、總長 15 秒，
-component 叫 YunlinVideo。`}
+component 叫 TaichungVideo。`}
           </div>
         </div>
       </div>
