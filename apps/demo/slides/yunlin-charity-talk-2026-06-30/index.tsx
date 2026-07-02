@@ -8,6 +8,7 @@ import coachWordpress from './assets/coach-wordpress.png';
 import faceDistortion2 from './assets/face-distortion-2.png';
 import hyperframesTemplateShowcase from './assets/hyperframes-template-showcase.mp4';
 import hyperframesTemplateShowcasePoster from './assets/hyperframes-template-showcase.png';
+import lineGainfriendsQr from './assets/line-gainfriends-qr.png';
 import photoroomBody from './assets/photoroom-body.png';
 import photoroomName from './assets/photoroom-name.png';
 import realSpeakerBody from './assets/real-speaker-body.jpg';
@@ -4554,6 +4555,72 @@ const ClosingQA: Page = () => (
   </div>
 );
 
+const JoinOfficialLine: Page = () => (
+  <div style={frame}>
+    <div style={shell} />
+    <div
+      style={{
+        ...contentPad,
+        display: 'grid',
+        gridTemplateColumns: '0.96fr 0.84fr',
+        gap: 48,
+        alignItems: 'center',
+        height: '100%',
+      }}
+    >
+      <div>
+        <Label>Connect</Label>
+        <div style={{ marginTop: 24 }}>
+          <PageTitle>請掃描加入官方賴</PageTitle>
+        </div>
+        <Subline>
+          掃描右側 QR code，直接加入官方 LINE。
+          <br />
+          後續活動通知、教材資訊與聯絡方式都會整理在這裡。
+        </Subline>
+        <div
+          style={{
+            marginTop: 44,
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: 18,
+            padding: '18px 26px',
+            borderRadius: 999,
+            background: palette.accent,
+            color: '#f8fff9',
+            boxShadow: '0 18px 40px rgba(12, 124, 89, 0.22)',
+          }}
+        >
+          <div style={{ fontSize: 24, letterSpacing: '0.18em' }}>LINE</div>
+          <div style={{ fontSize: 30, fontWeight: 700 }}>現在加入</div>
+        </div>
+      </div>
+      <div
+        style={{
+          justifySelf: 'end',
+          width: 660,
+          padding: 30,
+          borderRadius: 40,
+          background: palette.surface,
+          border: `1px solid ${palette.line}`,
+          boxShadow: '0 28px 68px rgba(61, 39, 15, 0.12)',
+          boxSizing: 'border-box',
+        }}
+      >
+        <img
+          src={lineGainfriendsQr}
+          alt="官方 LINE QR code"
+          style={{
+            width: '100%',
+            display: 'block',
+            borderRadius: 24,
+          }}
+        />
+      </div>
+    </div>
+  </div>
+);
+
 export default [
   Cover,
   SpeakerIntro,
@@ -4595,4 +4662,5 @@ export default [
   HyperframesTemplatesAndPrompts,
   RemotionBatchTemplate,
   ClosingQA,
+  JoinOfficialLine,
 ] satisfies Page[];
