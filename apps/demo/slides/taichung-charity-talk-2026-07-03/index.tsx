@@ -390,21 +390,7 @@ const Cover: Page = () => (
         justifyContent: 'space-between',
       }}
     >
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-        <Label>Taichung Charity Lecture</Label>
-        <div
-          style={{
-            fontSize: 26,
-            color: palette.muted,
-            padding: '14px 22px',
-            borderRadius: 999,
-            border: `1px solid ${palette.line}`,
-            background: palette.surface,
-          }}
-        >
-          2026.07.03
-        </div>
-      </div>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }} />
 
       <div style={{ maxWidth: 1260 }}>
         <h1
@@ -417,7 +403,7 @@ const Cover: Page = () => (
             fontWeight: 700,
           }}
         >
-          AI實作社群貼文
+          AI製作社群貼文
         </h1>
         <p
           style={{
